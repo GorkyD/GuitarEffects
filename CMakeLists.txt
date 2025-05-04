@@ -5,29 +5,57 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
-
 find_package(RtAudio CONFIG REQUIRED)
 
-set(SOURCES
-    main.cpp
-    MainWindow.cpp
-    Effect.cpp
-    EffectManager.cpp
-    DelayEffect.cpp
-    ReverbEffect.cpp
-    OverdriveEffect.cpp
+# Core sources
+set(CORE_SOURCES
+    src/core/main.cpp
+    src/core/EffectManager.cpp
 )
 
-set(HEADERS
-    MainWindow.h
-    Effect.h
-    EffectManager.h
-    DelayEffect.h
-    ReverbEffect.h
-    OverdriveEffect.h
+set(CORE_HEADERS
+    src/core/EffectManager.h
 )
 
-add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+# UI sources
+set(UI_SOURCES
+    src/ui/MainWindow.cpp
+)
+
+set(UI_HEADERS
+    src/ui/MainWindow.h
+)
+
+# Effect sources
+set(EFFECT_SOURCES
+    src/effects/Effect.cpp
+    src/effects/DelayEffect.cpp
+    src/effects/ReverbEffect.cpp
+    src/effects/OverdriveEffect.cpp
+)
+
+set(EFFECT_HEADERS
+    src/effects/Effect.h
+    src/effects/DelayEffect.h
+    src/effects/ReverbEffect.h
+    src/effects/OverdriveEffect.h
+)
+
+# Resources
+set(RESOURCES
+    resources/resources.qrc
+)
+
+add_executable(${PROJECT_NAME} 
+    ${CORE_SOURCES} ${CORE_HEADERS}
+    ${UI_SOURCES} ${UI_HEADERS}
+    ${EFFECT_SOURCES} ${EFFECT_HEADERS}
+    ${RESOURCES}
+)
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt5::Core

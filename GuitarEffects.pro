@@ -5,25 +5,40 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = GuitarEffects
 TEMPLATE = app
 
+# Core sources
 SOURCES += \
-    main.cpp \
-    MainWindow.cpp \
-    Effect.cpp \
-    EffectManager.cpp \
-    DelayEffect.cpp \
-    ReverbEffect.cpp \
-    OverdriveEffect.cpp
+    src/core/main.cpp \
+    src/core/EffectManager.cpp
 
 HEADERS += \
-    MainWindow.h \
-    Effect.h \
-    EffectManager.h \
-    DelayEffect.h \
-    ReverbEffect.h \
-    OverdriveEffect.h
+    src/core/EffectManager.h
 
-# Добавляем RtAudio
+# UI sources
+SOURCES += \
+    src/ui/MainWindow.cpp
+
+HEADERS += \
+    src/ui/MainWindow.h
+
+# Effect sources
+SOURCES += \
+    src/effects/Effect.cpp \
+    src/effects/DelayEffect.cpp \
+    src/effects/ReverbEffect.cpp \
+    src/effects/OverdriveEffect.cpp
+
+HEADERS += \
+    src/effects/Effect.h \
+    src/effects/DelayEffect.h \
+    src/effects/ReverbEffect.h \
+    src/effects/OverdriveEffect.h
+
+# Resources
+RESOURCES += \
+    resources/resources.qrc
+
 LIBS += -lrtaudio
 
-# Настройки компилятора
-QMAKE_CXXFLAGS += -std=c++17 
+QMAKE_CXXFLAGS += -std=c++17
+
+INCLUDEPATH += src 

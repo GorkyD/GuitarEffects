@@ -4,25 +4,28 @@
     <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\build\GuitarEffects_autogen\mocs_compilation_Debug.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\main.cpp">
+    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\src\core\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\MainWindow.cpp">
+    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\src\core\EffectManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\Effect.cpp">
+    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\src\ui\MainWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\EffectManager.cpp">
+    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\src\effects\Effect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\DelayEffect.cpp">
+    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\src\effects\DelayEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\ReverbEffect.cpp">
+    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\src\effects\ReverbEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\OverdriveEffect.cpp">
+    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\src\effects\OverdriveEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\build\GuitarEffects_autogen\3YJK5W5UP7\qrc_resources.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="D:\Work\GuitarEffects\GuitarEffects\build\GuitarEffects_autogen\mocs_compilation_Release.cpp">
@@ -36,29 +39,38 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\MainWindow.h">
+    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\src\core\EffectManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\Effect.h">
+    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\src\ui\MainWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\EffectManager.h">
+    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\src\effects\Effect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\DelayEffect.h">
+    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\src\effects\DelayEffect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\ReverbEffect.h">
+    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\src\effects\ReverbEffect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\OverdriveEffect.h">
+    <ClInclude Include="D:\Work\GuitarEffects\GuitarEffects\src\effects\OverdriveEffect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="D:\Work\GuitarEffects\GuitarEffects\build\CMakeFiles\2048291fb87c8e6f8aeec1e9ee74fc2a\qrc_resources.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
     <CustomBuild Include="D:\Work\GuitarEffects\GuitarEffects\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="D:\Work\GuitarEffects\GuitarEffects\resources\resources.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{ABB35C39-C391-3B35-9470-46C6416346C0}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{EED6A272-0FE8-3E8B-B994-DC2C38B1AAA0}</UniqueIdentifier>
     </Filter>
