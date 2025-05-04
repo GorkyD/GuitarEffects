@@ -1,3 +1,17 @@
+^D:\WORK\GUITAREFFECTS\GUITAREFFECTS\BUILD\CMAKEFILES\2048291FB87C8E6F8AEEC1E9EE74FC2A\QRC_RESOURCES.CPP.RULE
+setlocal
+cd D:\Work\GuitarEffects\GuitarEffects\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/Work/GuitarEffects/GuitarEffects/build/CMakeFiles/GuitarEffects_autogen.dir/AutoRcc_resources_3YJK5W5UP7_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
 ^D:\WORK\GUITAREFFECTS\GUITAREFFECTS\CMAKELISTS.TXT
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -SD:/Work/GuitarEffects/GuitarEffects -BD:/Work/GuitarEffects/GuitarEffects/build --check-stamp-file D:/Work/GuitarEffects/GuitarEffects/build/CMakeFiles/generate.stamp

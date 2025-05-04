@@ -66,7 +66,8 @@
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/share/rtaudio/RtAudioConfig.cmake",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/share/rtaudio/RtAudioTargets.cmake",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/share/rtaudio/RtAudioTargets-debug.cmake",
-		"C:/Users/dlolg/vcpkg/installed/x64-windows/share/rtaudio/RtAudioTargets-release.cmake"
+		"C:/Users/dlolg/vcpkg/installed/x64-windows/share/rtaudio/RtAudioTargets-release.cmake",
+		"D:/Work/GuitarEffects/GuitarEffects/resources/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "D:/Work/GuitarEffects/GuitarEffects",
 	"CROSS_CONFIG" : false,
@@ -75,39 +76,39 @@
 	"HEADERS" : 
 	[
 		[
-			"D:/Work/GuitarEffects/GuitarEffects/DelayEffect.h",
+			"D:/Work/GuitarEffects/GuitarEffects/src/core/EffectManager.h",
 			"MU",
-			"EWIEGA46WW/moc_DelayEffect.cpp",
+			"PRMOGMWJPH/moc_EffectManager.cpp",
 			null
 		],
 		[
-			"D:/Work/GuitarEffects/GuitarEffects/Effect.h",
+			"D:/Work/GuitarEffects/GuitarEffects/src/effects/DelayEffect.h",
 			"MU",
-			"EWIEGA46WW/moc_Effect.cpp",
+			"IZCFQWTJWU/moc_DelayEffect.cpp",
 			null
 		],
 		[
-			"D:/Work/GuitarEffects/GuitarEffects/EffectManager.h",
+			"D:/Work/GuitarEffects/GuitarEffects/src/effects/Effect.h",
 			"MU",
-			"EWIEGA46WW/moc_EffectManager.cpp",
+			"IZCFQWTJWU/moc_Effect.cpp",
 			null
 		],
 		[
-			"D:/Work/GuitarEffects/GuitarEffects/MainWindow.h",
+			"D:/Work/GuitarEffects/GuitarEffects/src/effects/OverdriveEffect.h",
 			"MU",
-			"EWIEGA46WW/moc_MainWindow.cpp",
+			"IZCFQWTJWU/moc_OverdriveEffect.cpp",
 			null
 		],
 		[
-			"D:/Work/GuitarEffects/GuitarEffects/OverdriveEffect.h",
+			"D:/Work/GuitarEffects/GuitarEffects/src/effects/ReverbEffect.h",
 			"MU",
-			"EWIEGA46WW/moc_OverdriveEffect.cpp",
+			"IZCFQWTJWU/moc_ReverbEffect.cpp",
 			null
 		],
 		[
-			"D:/Work/GuitarEffects/GuitarEffects/ReverbEffect.h",
+			"D:/Work/GuitarEffects/GuitarEffects/src/ui/MainWindow.h",
 			"MU",
-			"EWIEGA46WW/moc_ReverbEffect.cpp",
+			"YPKJ5OE7LN/moc_MainWindow.cpp",
 			null
 		]
 	],
@@ -137,6 +138,7 @@
 	"MOC_INCLUDES" : [],
 	"MOC_INCLUDES_Debug" : 
 	[
+		"D:/Work/GuitarEffects/GuitarEffects/src",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/include/qt5",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/include/qt5/QtCore",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/tools/qt5/mkspecs/win32-msvc",
@@ -147,6 +149,7 @@
 	],
 	"MOC_INCLUDES_MinSizeRel" : 
 	[
+		"D:/Work/GuitarEffects/GuitarEffects/src",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/include/qt5",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/include/qt5/QtCore",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/tools/qt5/mkspecs/win32-msvc",
@@ -157,6 +160,7 @@
 	],
 	"MOC_INCLUDES_RelWithDebInfo" : 
 	[
+		"D:/Work/GuitarEffects/GuitarEffects/src",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/include/qt5",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/include/qt5/QtCore",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/tools/qt5/mkspecs/win32-msvc",
@@ -167,6 +171,7 @@
 	],
 	"MOC_INCLUDES_Release" : 
 	[
+		"D:/Work/GuitarEffects/GuitarEffects/src",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/include/qt5",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/include/qt5/QtCore",
 		"C:/Users/dlolg/vcpkg/installed/x64-windows/tools/qt5/mkspecs/win32-msvc",
@@ -200,13 +205,37 @@
 	"SETTINGS_FILE_Release" : "D:/Work/GuitarEffects/GuitarEffects/build/CMakeFiles/GuitarEffects_autogen.dir/AutogenUsed_Release.txt",
 	"SOURCES" : 
 	[
-		[ "D:/Work/GuitarEffects/GuitarEffects/DelayEffect.cpp", "MU", null ],
-		[ "D:/Work/GuitarEffects/GuitarEffects/Effect.cpp", "MU", null ],
-		[ "D:/Work/GuitarEffects/GuitarEffects/EffectManager.cpp", "MU", null ],
-		[ "D:/Work/GuitarEffects/GuitarEffects/MainWindow.cpp", "MU", null ],
-		[ "D:/Work/GuitarEffects/GuitarEffects/OverdriveEffect.cpp", "MU", null ],
-		[ "D:/Work/GuitarEffects/GuitarEffects/ReverbEffect.cpp", "MU", null ],
-		[ "D:/Work/GuitarEffects/GuitarEffects/main.cpp", "MU", null ]
+		[
+			"D:/Work/GuitarEffects/GuitarEffects/src/core/EffectManager.cpp",
+			"MU",
+			null
+		],
+		[ "D:/Work/GuitarEffects/GuitarEffects/src/core/main.cpp", "MU", null ],
+		[
+			"D:/Work/GuitarEffects/GuitarEffects/src/effects/DelayEffect.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/Work/GuitarEffects/GuitarEffects/src/effects/Effect.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/Work/GuitarEffects/GuitarEffects/src/effects/OverdriveEffect.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/Work/GuitarEffects/GuitarEffects/src/effects/ReverbEffect.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/Work/GuitarEffects/GuitarEffects/src/ui/MainWindow.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
