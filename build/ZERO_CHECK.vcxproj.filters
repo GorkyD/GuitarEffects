@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Work\GuitarEffects\GuitarEffects\build\CMakeFiles\546b5450d5eedda0b712ce5a8c8864b3\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{ABB35C39-C391-3B35-9470-46C6416346C0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

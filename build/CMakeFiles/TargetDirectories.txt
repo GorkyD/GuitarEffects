@@ -1,0 +1,5 @@
+D:/Work/GuitarEffects/GuitarEffects/build/CMakeFiles/Delay.dir
+D:/Work/GuitarEffects/GuitarEffects/build/CMakeFiles/Reverb.dir
+D:/Work/GuitarEffects/GuitarEffects/build/CMakeFiles/Overdrive.dir
+D:/Work/GuitarEffects/GuitarEffects/build/CMakeFiles/ALL_BUILD.dir
+D:/Work/GuitarEffects/GuitarEffects/build/CMakeFiles/ZERO_CHECK.dir

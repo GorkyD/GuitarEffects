@@ -1,0 +1,10 @@
+^D:\WORK\GUITAREFFECTS\GUITAREFFECTS\BUILD\CMAKEFILES\546B5450D5EEDDA0B712CE5A8C8864B3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Work/GuitarEffects/GuitarEffects -BD:/Work/GuitarEffects/GuitarEffects/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Work/GuitarEffects/GuitarEffects/build/GuitarEffects.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
