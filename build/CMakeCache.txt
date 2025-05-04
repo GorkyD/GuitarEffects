@@ -114,6 +114,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=GuitarEffects
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=1.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=rc
 
@@ -205,6 +220,21 @@ GuitarEffects_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 GuitarEffects_SOURCE_DIR:STATIC=D:/Work/GuitarEffects/GuitarEffects
+
+//The directory containing a CMake configuration file for Qt5Core.
+Qt5Core_DIR:PATH=C:/Users/dlolg/vcpkg/installed/x64-windows/share/cmake/Qt5Core
+
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=C:/Users/dlolg/vcpkg/installed/x64-windows/share/cmake/Qt5Gui
+
+//The directory containing a CMake configuration file for Qt5Widgets.
+Qt5Widgets_DIR:PATH=C:/Users/dlolg/vcpkg/installed/x64-windows/share/cmake/Qt5Widgets
+
+//The directory containing a CMake configuration file for Qt5.
+Qt5_DIR:PATH=C:/Users/dlolg/vcpkg/installed/x64-windows/share/cmake/Qt5
+
+//The directory containing a CMake configuration file for Qt6.
+Qt6_DIR:PATH=Qt6_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for RtAudio.
 RtAudio_DIR:PATH=C:/Users/dlolg/vcpkg/installed/x64-windows/share/rtaudio
