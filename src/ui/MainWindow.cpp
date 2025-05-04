@@ -12,7 +12,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
     qDebug() << "Starting MainWindow initialization...";
     
-    // Set application icon
     setWindowIcon(QIcon(":/icons/app_icon.png"));
     
     setupUI();
@@ -32,7 +31,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
         updateEffectBlocks();
         
         qDebug() << "MainWindow initialization completed successfully";
-    } catch (const std::exception& e) {
+    } catch (const std::exception& e) 
+    {
         qDebug() << "Error during initialization:" << e.what();
         QMessageBox::critical(this, "Error", QString("Failed to initialize audio system: %1").arg(e.what()));
     }
@@ -82,7 +82,8 @@ void MainWindow::updateEffectBlocks()
     qDebug() << "updateEffectBlocks: start";
     clearEffectBlocks();
     effectBlocks_.clear();
-    for (int i = 0; i < 3; ++i) {
+    for (int i = 0; i < 3; ++i) 
+    {
         qDebug() << "updateEffectBlocks: creating effect block" << i;
         createEffectBlock(i);
     }
@@ -141,7 +142,8 @@ void MainWindow::createEffectBlock(int effectIndex)
     auto paramNames = effect->getParameterNames();
     qDebug() << "paramNames.size() =" << paramNames.size();
 
-    for (size_t p = 0; p < paramNames.size(); ++p) {
+    for (size_t p = 0; p < paramNames.size(); ++p) 
+    {
         if (paramNames[p].empty()) continue;
         QString paramNameQt = QString::fromUtf8(paramNames[p].c_str());
         QHBoxLayout* paramLayout = new QHBoxLayout();
@@ -193,7 +195,8 @@ void MainWindow::onParameterChanged(int effectIndex, int paramIndex, int value)
     auto effect = effectManager_->getEffect(effectIndex);
     if (!effect) return;
     auto paramNames = effect->getParameterNames();
-    if (paramIndex >= 0 && paramIndex < (int)paramNames.size()) {
+    if (paramIndex >= 0 && paramIndex < (int)paramNames.size()) 
+    {
         float fval = value / 100.0f;
         effect->setParameter(paramNames[paramIndex], fval);
         effectBlocks_[effectIndex].parameterValues[paramIndex]->setText(QString::number(fval, 'f', 2));
@@ -215,7 +218,8 @@ void MainWindow::onStartStop()
         {
             isRunning_ = true;
             startStopButton_->setText("Stop");
-        } else {
+        } else 
+        {
             QMessageBox::critical(this, "Error", "Failed to start audio stream");
         }
     } else 
