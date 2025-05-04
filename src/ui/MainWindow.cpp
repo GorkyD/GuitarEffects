@@ -120,7 +120,7 @@ void MainWindow::createEffectBlock(int effectIndex)
     QVBoxLayout* vbox = new QVBoxLayout(block.groupBox);
     QHBoxLayout* top = new QHBoxLayout();
 
-    block.enableCheckBox = new QCheckBox("Включить");
+    block.enableCheckBox = new QCheckBox("Enable");
     block.enableCheckBox->setChecked(effect->isEnabled());
 
     connect(block.enableCheckBox, &QCheckBox::toggled, [this, effectIndex](bool checked){onEnableEffect(effectIndex, checked);});
